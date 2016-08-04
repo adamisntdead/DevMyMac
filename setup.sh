@@ -62,7 +62,7 @@ heroku-toolbelt
 brew tap caskroom/cask
 
 echo "Installing Apps"
-brew cask install \
+sudo brew cask install \
 google-chrome \
 coderunner \
 evernote \
@@ -80,6 +80,9 @@ macdown \
 google-drive \
 cleanmymac \
 iterm2
+
+@echo "Cleaning Up Cask Files"
+sudo brew cask cleanup
 
 echo "Installing Nodejs Packages"
 sudo npm i -g nodemon gulp simplehttpserver bower
