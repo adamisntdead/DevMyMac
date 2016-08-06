@@ -1,14 +1,13 @@
 ###############################################################################
 # Computer Settings                                                           #
 ###############################################################################
-echo "Setup computer name"
-sudo scutil --set ComputerName "adams-macbook"
-sudo scutil --set HostName "adams-macbook"
-sudo scutil --set LocalHostName "adams-macbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "adams-macbook"
+echo "Enter your computer name please?"
+read cpname
 
-echo "Disable the 'Are you sure you want to open this application?' dialog"
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+sudo scutil --set ComputerName "$cpname"
+sudo scutil --set HostName "$cpname"
+sudo scutil --set LocalHostName "$cpname"
+defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$cpname"
 
 echo "Enable repeat on keydown"
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -29,9 +28,13 @@ echo "Show the ~/Library folder"
 chflags nohidden ~/Library
 
 echo "set git config values"
-git config --global user.name "Adam Kelly" && \
-git config --global user.email "adam.guitar12@gmail.com" && \
-git config --global github.user adamisntdead && \
+echo "Please enter your name?"
+read name
+git config --global user.name "$name"
+echo "Please enter your git email?"
+read email
+git config --global user.email "$email"
+
 git config --global color.ui true
 
 ###############################################################################
@@ -62,14 +65,13 @@ heroku-toolbelt
 brew tap caskroom/cask
 
 echo "Installing Apps"
-sudo brew cask install \
+brew cask install \
 google-chrome \
 coderunner \
 evernote \
 firefox \
 spotify \
 gitter \
-boom \
 github-desktop \
 atom \
 gitkraken \
@@ -78,11 +80,10 @@ steam \
 mamp \
 macdown \
 google-drive \
-cleanmymac \
 iterm2
 
-@echo "Cleaning Up Cask Files"
-sudo brew cask cleanup
+echo "Cleaning Up Cask Files"
+brew cask cleanup
 
 echo "Installing Nodejs Packages"
 sudo npm i -g nodemon gulp simplehttpserver bower
