@@ -1,5 +1,7 @@
 # CleanMacSetup
-A Script that will install all of the tools that I use on my mac, but in a quick and simple way
+
+### What This Does
+> So basicly, when I do a fresh install of OSX, I always end up doing the same thing to set back up my workspace. I mainly program in Node.js, as you will see in whats installed! What this does is setup git, node.js, nvm, Zsh, A Good Few Programs and some command line tools! Any additions people want, or if anyone want to help out just __Fork it and throw a pull request__, I will get back to you ASAP 
 
 
 ### Installation
