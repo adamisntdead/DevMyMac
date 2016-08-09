@@ -1,25 +1,3 @@
-# _______  ___      _______  _______  __    _
-# |       ||   |    |       ||   _   ||  |  | |
-# |       ||   |    |    ___||  |_|  ||   |_| |
-# |       ||   |    |   |___ |       ||       |
-# |      _||   |___ |    ___||       ||  _    |
-# |     |_ |       ||   |___ |   _   || | |   |
-# |_______||_______||_______||__| |__||_|  |__|
-# __   __  _______  _______
-# |  |_|  ||   _   ||       |
-# |       ||  |_|  ||       |
-# |       ||       ||       |
-# |       ||       ||      _|
-# | ||_|| ||   _   ||     |_
-# |_|   |_||__| |__||_______|
-# _______  _______  _______  __   __  _______
-# |       ||       ||       ||  | |  ||       |
-# |  _____||    ___||_     _||  | |  ||    _  |
-# | |_____ |   |___   |   |  |  |_|  ||   |_| |
-# |_____  ||    ___|  |   |  |       ||    ___|
-# _____| ||   |___   |   |  |       ||   |
-# |_______||_______|  |___|  |_______||___|    
-
 # Color Variables
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -222,7 +200,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     echo "Cleaning Up Cask Files"
     brew cask cleanup
 
-    echo "${GREEN}Thanks for using CleanMacSetup! If you liked it, make sure to go to the Github Repo (https://github.com/adamisntdead/CleanMacSetup) and Star it! If you have any issues, just put them there, and all suggestions and contributions are appreciated!"
+    echo "${GREEN}Thanks for using DevMyMac! If you liked it, make sure to go to the Github Repo (https://github.com/adamisntdead/DevMyMac) and Star it! If you have any issues, just put them there, and all suggestions and contributions are appreciated!"
 
 else
    echo "Need to install the OSX Command Line Tools (or XCode) First! Starting Install..."
