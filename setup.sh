@@ -179,22 +179,16 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     brew cask install \
     google-chrome \
     coderunner \
-    evernote \
-    firefox \
-    spotify \
     gitter \
     github-desktop \
     atom \
     gitkraken \
-    obs \
-    steam \
     mamp \
     macdown \
     google-drive \
     iterm2 \
     sublime-text \
     virtualbox \
-    minecraft \
     scratch
 
     echo "Cleaning Up Cask Files"
