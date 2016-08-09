@@ -220,6 +220,24 @@ brew install gpg
 command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 ```
 
+then we can run the RVM install script 
+
+```
+\curl -L https://get.rvm.io | bash -s stable
+source ~/.rvm/scripts/rvm
+```
+
+And then finally we can install the latest version of ruby:
+```
+rvm install ruby-2.3.1
+```
+
+Now we have Ruby and Ruby Gems installed, we can install rails
+```
+gem install bundler
+gem install rails
+```
+
 
 ### Untiy3D
 <a name="unity"></a>
