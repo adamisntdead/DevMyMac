@@ -28,8 +28,8 @@ Then you can use the script!
 
 <hr/>
 
-# Whats Installed
 <a name="guide"></a>
+# Whats Installed
 
 * [Core](#core)
 * [Node](#node)
@@ -39,9 +39,9 @@ Then you can use the script!
 * [Unity3D](#unity)
 * [Databases](#database)
 
+<a name="core"></a>
 ### Core
 ###### Set Computer Name
-<a name="core"></a>
 The first thing the script does when you run it, is you are prompted for the name of your computer.
 Then, we take the name and use it to set the __hostname and computer name__.
 
