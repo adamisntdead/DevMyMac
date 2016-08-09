@@ -63,10 +63,10 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       nvm install node
       nvm use node
 
-      brew install mongodb
-
       npm install -g coffee-script
       npm install -g grunt-cli
+      npm install -g gulp
+      npm install -g bower
       npm install -g jshint
       npm install -g less
 
