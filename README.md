@@ -181,12 +181,33 @@ The script also installs some modules for convenience (Bower, Gulp, Grunt-CLI, C
 
 ### Java
 <a name="java"></a>
-TODO: Write This
+To setup for java development, we want to install the [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (Java Development Kit), along with my IDE of choice, eclipse.
+
+Thankfully, we can install all of these using Homebrew:
+```bash
+brew cask install \
+  java \
+  eclipse-ide \
+  eclipse-java
+```
 
 
 ### Android Development
 <a name="android"></a>
-TODO: Write This
+To develop for android devices, we need a few things, The JDK, Android Studio, The Android SDK and Possibly an IDE (Eclipse)
+
+Again, we can do all of this with Homebrew. First we install the JDK as its a dependency for others, then the IDE's and finally the Android SDK:
+
+```bash
+brew cask install \
+  java \
+  eclipse-ide \
+  eclipse-java \
+  android-studio \
+  intellij-idea-ce
+  
+brew install android-sdk
+```
 
 
 ### Ruby
@@ -196,7 +217,11 @@ TODO: Write This
 
 ### Untiy3D
 <a name="unity"></a>
-TODO: Write This
+This bit is quite simple, to install [Unity3D]() We can just use the cask for both _Unity_ and the _Unity Web Player_
+The command is the same as the installation of the core apps:
+```bash
+brew cask install unity unity-web-player
+```
 
 
 ### Databases
