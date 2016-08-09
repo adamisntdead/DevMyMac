@@ -212,7 +212,13 @@ brew install android-sdk
 
 ### Ruby
 <a name="ruby"></a>
-TODO: Write This
+Like with node, the best wasy to install ruby is by using the [Ruby Version Manager](https://rvm.io/). This means we can easily control what version of ruby we are using, which again is helpful for backwards checking ect.
+
+First, we must setup something to get a key, so that the installation doesnt fail.
+```
+brew install gpg
+command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+```
 
 
 ### Untiy3D
@@ -226,4 +232,23 @@ brew cask install unity unity-web-player
 
 ### Databases
 <a name="database"></a>
-TODO: Write This
+In this option, we install a few types of database, which is very useful for PHP, Ruby and Node Apps.
+We are going to install a few common ones:
+* MySQL (with MySQL Workbench)
+* Postgresql
+* MongoDB
+* Redis
+* Elastic Search
+
+We can install all of these using homebrew, and we can install MySQL Workbench Using Cask
+
+```
+brew install \
+  mysql \
+  postgresql \
+  mongodb \
+  redis \
+  elasticsearch
+  
+brew cask install mysqlworkbench
+```
