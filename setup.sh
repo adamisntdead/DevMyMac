@@ -44,8 +44,6 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     # Install Applications                                                        #
     ###############################################################################
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
     # Install Homebrew
     echo "Installing Homebrew"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -193,6 +191,8 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
     echo "Cleaning Up Cask Files"
     brew cask cleanup
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
     echo "${GREEN}Thanks for using DevMyMac! If you liked it, make sure to go to the Github Repo (https://github.com/adamisntdead/DevMyMac) and Star it! If you have any issues, just put them there, and all suggestions and contributions are appreciated!"
 
