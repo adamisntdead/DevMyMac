@@ -239,7 +239,7 @@ gem install rails
 ```
 
 
-### Untiy3D
+### Unity3D
 <a name="unity"></a>
 This bit is quite simple, to install [Unity3D]() We can just use the cask for both _Unity_ and the _Unity Web Player_
 The command is the same as the installation of the core apps:
