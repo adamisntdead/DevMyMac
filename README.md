@@ -1,6 +1,8 @@
 ![DevMyMac](Media/DMM-FN.png)
 
 #### Welcome To DevMyMac!
+
+[![Join the chat at https://gitter.im/DevMyMac/Lobby](https://badges.gitter.im/DevMyMac/Lobby.svg)](https://gitter.im/DevMyMac/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 DevMyMac is a script that allows the user to setup their OSX / MacOS Computer for Development in
 
 * Ruby
