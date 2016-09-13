@@ -1,8 +1,4 @@
-# __DevMyMac__
-[![forthebadge](http://forthebadge.com/images/badges/reading-6th-grade-level.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/gluten-free.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/certified-steve-bruhle.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+![DevMyMac](Media/DMM-FN.png)
 
 #### Welcome To DevMyMac!
 DevMyMac is a script that allows the user to setup their OSX / MacOS Computer for Development in
@@ -205,7 +201,7 @@ brew cask install \
   eclipse-java \
   android-studio \
   intellij-idea-ce
-  
+
 brew install android-sdk
 ```
 
@@ -220,7 +216,7 @@ brew install gpg
 command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 ```
 
-then we can run the RVM install script 
+then we can run the RVM install script
 
 ```
 \curl -L https://get.rvm.io | bash -s stable
@@ -267,6 +263,6 @@ brew install \
   mongodb \
   redis \
   elasticsearch
-  
+
 brew cask install mysqlworkbench
 ```
