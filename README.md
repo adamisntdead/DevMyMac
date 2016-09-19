@@ -15,6 +15,8 @@ DevMyMac is a script that allows the user to setup their OSX / MacOS Computer fo
 
 See [Below](#guide) For whats installed!
 
+Works with __OSX Yosemite__, __OSX El Capitan__ & __MacOS Sierra__
+
 # Using the Script
 To use this script, first you must install XCode, or the XCode Command Line Tools. To install the command line tools, use the command:
 
