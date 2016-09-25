@@ -17,6 +17,11 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     ###############################################################################
     echo -e "${RED}Enter your computer name please?${NC}"
     read cpname
+    echo -e "${RED}Please enter your name?${NC}"
+    read name
+    echo -e "${RED}Please enter your git email?${NC}"
+    read email
+
 
     sudo scutil --set ComputerName "$cpname"
     sudo scutil --set HostName "$cpname"
@@ -30,12 +35,9 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     defaults write NSGlobalDomain InitialKeyRepeat -int 12
     chflags nohidden ~/Library
 
-    echo "set git config values"
-    echo -e "${RED}Please enter your name?${NC}"
-    read name
+
     git config --global user.name "$name"
-    echo -e "${RED}Please enter your git email?${NC}"
-    read email
+
     git config --global user.email "$email"
 
     git config --global color.ui true
@@ -59,7 +61,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
       export NVM_DIR="/Users/adam/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm so we dont have to reboot the terminal
-    
+
       #Installing Nodejs
 
       echo "Installing Nodejs"
