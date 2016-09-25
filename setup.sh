@@ -22,6 +22,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     echo -e "${RED}Please enter your git email?${NC}"
     read email
 
+    clear
 
     sudo scutil --set ComputerName "$cpname"
     sudo scutil --set HostName "$cpname"
@@ -50,6 +51,8 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     echo "Installing Homebrew"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+
+    clear
     echo -e "${RED}Install NodeJS? ${NC}[y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -77,6 +80,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
     fi
 
+    clear
     echo -e "${RED}Install Unity3D? ${NC}[y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -86,6 +90,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
     fi
 
+    clear
     echo -e "${RED}Install Python? ${NC}[y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -95,6 +100,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       brew install python
     fi
 
+    clear
     echo -e "${RED}Install Ruby?${NC} [y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -111,6 +117,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       gem install rails
     fi
 
+    clear
     echo -e "${RED}Install Cocoapods?${NC} [y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -120,6 +127,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       sudo gem install cocoapods
     fi
 
+    clear
     echo -e "${RED}Setup for Java Devlopment? ${NC}[y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -131,6 +139,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       eclipse-java
     fi
 
+    clear
     echo -e "${RED}Setup For Android Developemnt?${NC} [y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -146,6 +155,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       brew install android-sdk
     fi
 
+    clear
     echo -e "${RED}Install Databases? ${NC}[y/N]"
     read -n 1 -r
     echo    # (optional) move to a new line
@@ -164,7 +174,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     fi
 
 
-
+    clear
     # Install Homebrew Apps
     echo "Installing Homebrew Command Line Tools"
     brew install \
@@ -200,6 +210,8 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
     brew cask cleanup
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+    clear
 
     echo "${GREEN}Thanks for using DevMyMac! If you liked it, make sure to go to the Github Repo (https://github.com/adamisntdead/DevMyMac) and Star it! If you have any issues, just put them there, and all suggestions and contributions are appreciated!"
 
