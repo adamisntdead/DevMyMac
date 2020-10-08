@@ -101,6 +101,19 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       # Install Python
       brew install python
     fi
+       fi
+    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+    clear
+    echo -e "${RED}Install Python2? ${NC}[y/N]"
+    read -n 1 -r
+    echo    # (optional) move to a new line
+    if [[ $REPLY =~ ^[Yy]$ ]]
+    then
+      # Install Python
+      brew install python@2
+      export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
+      echo export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
+    fi
 
     clear
     echo -e "${RED}Install Ruby?${NC} [y/N]"
@@ -157,24 +170,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
       brew install android-sdk
     fi
 
-    clear
-    echo -e "${RED}Install Databases? ${NC}[y/N]"
-    read -n 1 -r
-    echo    # (optional) move to a new line
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
-      brew install mysql
-      brew install postgresql
-      brew install mongo
-      brew install redis
-      brew install elasticsearch
-
-      # Install mysql workbench
-      # Install Cask
-      brew install caskroom/cask/brew-cask
-      brew cask install --appdir="/Applications" mysqlworkbench
-    fi
-
+   
 
     clear
     # Install Homebrew Apps
@@ -192,22 +188,7 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
     brew tap caskroom/cask
 
-    echo "Installing Apps"
-    brew cask install \
-    google-chrome \
-    coderunner \
-    gitter \
-    github-desktop \
-    atom \
-    gitkraken \
-    mamp \
-    macdown \
-    google-drive \
-    iterm2 \
-    sublime-text \
-    virtualbox \
-    scratch
-
+ 
     echo "Cleaning Up Cask Files"
     brew cask cleanup
 
@@ -215,7 +196,16 @@ if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
 
     clear
 
-    echo "${GREEN}Thanks for using DevMyMac! If you liked it, make sure to go to the Github Repo (https://github.com/adamisntdead/DevMyMac) and Star it! If you have any issues, just put them there, and all suggestions and contributions are appreciated!"
+    echo "${GREEN}Jobs finished, now seperatly install 
+   google-chrome
+  coderunner
+  atom
+  macdown
+  google-drive
+  one-drive
+  iterm2
+  virtualbox
+ "
 
 else
    echo "Need to install the OSX Command Line Tools (or XCode) First! Starting Install..."
